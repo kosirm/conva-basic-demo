@@ -66,7 +66,8 @@ export default {
     handleClick(e) {
       const clickItemId = e.target.id();
       const item = this.list.find((i) => i.id === clickItemId);
-      item.fill = 'blue';
+      item.fill === 'orange' ? item.fill = '#89b717' : item.fill = 'orange';
+      console.log(clickItemId)
     }
   },
   mounted() {
